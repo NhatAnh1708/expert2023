@@ -57,8 +57,8 @@ from tqdm import tqdm
 
 VERSION = __version__ = '0.2.0 Released 26-May-2020'
 
-API_KEY = 'api_key'
-API_SECRET = 'api_secret'
+API_KEY = 'zmHwqBVKGhgSkIDSm7Lx8TrTJc8jaJyn'
+API_SECRET = 'OFy2UDkT0jyruNAXBDYaOLclvUYcVUwf'
 RETURN_ATTRIBUTES = 'gender,beauty,age,smiling,headpose,ethnicity,skinstatus'
 RETURN_LANDMARK = 1
 

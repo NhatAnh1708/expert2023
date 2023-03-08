@@ -99,7 +99,7 @@ if __name__ == '__main__':
             LANGUAGE = 'ru'
 
         # load localization of GUI
-        with open("lang/%s_lang.json" % LANGUAGE, "r") as f:
+        with open("lang/%s_lang.json" % LANGUAGE, "r", encoding="ISO-8859-1") as f:
             lang_gui = json.load(f)['gui'].copy()
 
         # update text in the current window

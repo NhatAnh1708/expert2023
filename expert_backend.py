@@ -75,7 +75,7 @@ Todo:
    https://github.com/Defasium/expertglasses
 
 '''
-
+import pickle
 import base64
 import json
 import os
@@ -161,8 +161,8 @@ class ExpertEyeglassesRecommender:
         self._vectors = dict()
         self._logger = logger
         self._verbose = verbose
-        self._session = tf.Session()
-        self._graph = tf.get_default_graph()
+        self._session = tf.compat.v1.Session()
+        self._graph = tf.compat.v1.get_default_graph()
         self._prefix = os.path.dirname(os.path.abspath(__file__))
         self._face_vector = None
         self._lang = lang.strip().lower()
@@ -812,6 +812,7 @@ class ExpertEyeglassesRecommender:
         del bface
 
         # load models
+
         (bgmm, knn_minority), \
         (bgmj, knn_majority), \
         (bgmj2, knn_majority2), \
